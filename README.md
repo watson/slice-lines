@@ -1,6 +1,6 @@
 # slice-lines
 
-Extract a subset of lines from a string.
+Very efficient module for extracting a subset of lines from a string.
 
 Similar to `str.slice(beginIndex, endIndex)` except that the indexes are
 lines instead of bytes.

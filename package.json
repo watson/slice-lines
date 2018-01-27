@@ -1,7 +1,7 @@
 {
   "name": "slice-lines",
   "version": "1.0.2",
-  "description": "Extract a subset of lines from a string",
+  "description": "Extract a subset of lines from a string efficiently",
   "main": "index.js",
   "dependencies": {
     "nth-indexof": "^1.0.0",
@@ -34,7 +34,12 @@
     "linebreaks",
     "newline",
     "newlines",
-    "subset"
+    "subset",
+    "fast",
+    "efficient",
+    "efficiently",
+    "quick",
+    "quickly"
   ],
   "author": "Thomas Watson <w@tson.dk> (https://twitter.com/wa7son)",
   "license": "MIT",
