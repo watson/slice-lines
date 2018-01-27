@@ -49,6 +49,21 @@ Arguments:
   is the total number of lines in `str` (for example, if `endIndex` is
   `-3` it is treated as `totalLines - 3`)
 
+## Benchmark
+
+Extracting line 10,000 from a text with over 500,000 lines
+
+```
+# sliceLines(str, lineNo, lineNo + 1)
+ok ~23 ms (0 s + 23097811 ns)
+
+# str.split('\n')[lineNo]
+ok ~126 ms (0 s + 125526268 ns)
+
+# str.split(/\r?\n/)[lineNo]
+ok ~165 ms (0 s + 164786579 ns)
+```
+
 ## License
 
 MIT
