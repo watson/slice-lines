@@ -1,6 +1,6 @@
 {
   "name": "slice-lines",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Extract a subset of lines from a string",
   "main": "index.js",
   "dependencies": {
@@ -42,7 +42,7 @@
   },
   "homepage": "https://github.com/watson/slice-lines#readme",
   "coordinates": [
-    56.009738,
-    11.961635
+    56.009733,
+    11.961579
   ]
 }
