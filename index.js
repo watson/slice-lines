@@ -10,14 +10,8 @@ function slice (str, beginIndex, endIndex) {
   if (beginIndex < 0 || endIndex < 0) {
     const match = str.match(/\n/g)
     const lineCount = match ? match.length + 1 : 1
-    if (beginIndex < 0) {
-      beginIndex = lineCount + beginIndex
-      if (beginIndex < 0) beginIndex = 0
-    }
-    if (endIndex < 0) {
-      endIndex = lineCount + endIndex
-      if (endIndex < 0) endIndex = 0
-    }
+    if (beginIndex < 0) beginIndex = Math.max(0, lineCount + beginIndex)
+    if (endIndex < 0) endIndex = Math.max(0, lineCount + endIndex)
   }
 
   if (endIndex !== undefined && endIndex - beginIndex <= 0) return ''
