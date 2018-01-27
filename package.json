@@ -1,0 +1,43 @@
+{
+  "name": "slice-lines",
+  "version": "0.0.0",
+  "description": "Extract a subset of lines from a string",
+  "main": "index.js",
+  "dependencies": {
+    "nth-indexof": "^1.0.0"
+  },
+  "devDependencies": {
+    "standard": "^10.0.3",
+    "tape": "^4.8.0"
+  },
+  "scripts": {
+    "test": "standard && node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/watson/slice-lines.git"
+  },
+  "keywords": [
+    "slice",
+    "substr",
+    "substring",
+    "sub",
+    "extract",
+    "str",
+    "string",
+    "text",
+    "line",
+    "lines",
+    "linebreak",
+    "linebreaks",
+    "newline",
+    "newlines",
+    "subset"
+  ],
+  "author": "Thomas Watson <w@tson.dk> (https://twitter.com/wa7son)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/watson/slice-lines/issues"
+  },
+  "homepage": "https://github.com/watson/slice-lines#readme"
+}
