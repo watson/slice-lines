@@ -1,5 +1,6 @@
 'use strict'
 
+const count = require('quickly-count-substrings')
 const indexOf = require('nth-indexof')
 
 module.exports = slice
@@ -8,8 +9,7 @@ function slice (str, beginIndex, endIndex) {
   let start = 0
 
   if (beginIndex < 0 || endIndex < 0) {
-    const match = str.match(/\n/g)
-    const lineCount = match ? match.length + 1 : 1
+    const lineCount = count(str, '\n') + 1
     if (beginIndex < 0) beginIndex = Math.max(0, lineCount + beginIndex)
     if (endIndex < 0) endIndex = Math.max(0, lineCount + endIndex)
   }

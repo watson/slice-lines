@@ -4,7 +4,8 @@
   "description": "Extract a subset of lines from a string",
   "main": "index.js",
   "dependencies": {
-    "nth-indexof": "^1.0.0"
+    "nth-indexof": "^1.0.0",
+    "quickly-count-substrings": "^1.0.0"
   },
   "devDependencies": {
     "standard": "^10.0.3",
