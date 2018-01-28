@@ -26,10 +26,7 @@ function slice (str, beginIndex, endIndex) {
 
   const end = indexOf(str, '\n', endIndex - beginIndex - 1, start)
 
-  return str.slice(
-    start,
-    end === -1
-      ? undefined
-      : (str[end - 1] === '\r' ? end - 1 : end)
-  )
+  if (end === -1) return str.slice(start)
+
+  return str.slice(start, str[end - 1] === '\r' ? end - 1 : end)
 }
