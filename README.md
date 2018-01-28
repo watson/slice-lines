@@ -59,7 +59,7 @@ That approach requires a complete traversal of the entire text +
 contruction of new objects and strings for each line in the text.
 
 As seen below `sliceLines()` can be several orders of magnitudes faster
-and scales linear with the amount of lines in the text.
+and isn't impacted by the size of the text.
 
 Example extracting a line from a text with 500,000 lines
 
