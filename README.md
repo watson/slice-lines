@@ -76,7 +76,7 @@ ok ~406 μs (0 s + 406363 ns)
 # sliceLines(str, -1) // last line relative
 ok ~26 ms (0 s + 25749953 ns)
 
-# sliceLines(str, 513828) // last line by index
+# sliceLines(str, 499999) // last line by index
 ok ~15 ms (0 s + 14732301 ns)
 
 # str.split('\n')[10000]
